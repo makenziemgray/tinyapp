@@ -1,0 +1,15 @@
+# Skip dependencies
+node_modules/
+
+# Skip environment variables (important for API keys, passwords, etc.)
+.env
+
+# Skip macOS system files
+.DS_Store
+
+# Skip log files
+logs/
+*.log
+
+# Skip local editor settings (VS Code, etc.)
+.vscode/
