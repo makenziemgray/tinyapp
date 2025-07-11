@@ -1,32 +1,21 @@
-# TinyApp 
+# TinyApp Project
 
 TinyApp is a full stack web application built with Node and Express that allows users to shorten long URLs (à la bit.ly).
 
----
+## Final Product
 
-## Features
+<img width="1919" height="947" alt="Screenshot 2025-07-10 at 10 06 09 PM" src="https://github.com/user-attachments/assets/ce108f78-ea23-428f-966a-3c35cefc060f" />
+<img width="1919" height="947" alt="Screenshot 2025-07-10 at 10 06 51 PM" src="https://github.com/user-attachments/assets/38697d10-9e77-4347-9ab3-89cf21bfd707" />
+<img width="1919" height="947" alt="Screenshot 2025-07-10 at 10 07 18 PM" src="https://github.com/user-attachments/assets/fc961298-dcf3-48e3-bbee-adc1002714d3" />
 
-- Register and login with secure password hashing (bcrypt)
-- Cookie-based session authentication
-- Create, view, update, and delete your own short URLs
-- Track total and unique visits per short URL
-- View analytics: timestamps of visitors
-- RESTful routes and full error handling
-- Clean, mobile-friendly UI using Bootstrap
 
----
-
-## Tech Stack
+## Dependencies
 
 - Node.js
 - Express
-- EJS (Embedded JavaScript templates)
+- EJS
 - bcryptjs
 - cookie-session
-- method-override
-- Mocha + Chai for testing
-
----
 
 ## Project Structure
 tinyapp/
@@ -38,32 +27,10 @@ tinyapp/
 ├── package.json             # Dependencies and scripts
 └── README.md                # This file
 
----
+## Getting Started
 
-## 🚀 Getting Started
-
-### 1. Clone this repo
-```zsh
-git clone https://github.com/your-username/tinyapp
-cd tinyapp
-
-### 2. Install dependencies
-npm install
-
-### 3. Start the server
-node express_server.js
-
-### 4. Go to
-http://localhost:8080
-
-Running Tests
-Test helper functions using:
-
-Security Features
-	•	Passwords are hashed using bcryptjs
-	•	Sessions stored via encrypted cookies
-	•	Users can only view/edit/delete their own URLs
-	•	Visitors tracked anonymously via session ID
+- Install all dependencies (using the `npm install` command).
+- Run the development web server using the `node express_server.js` command.
 
 
 
