@@ -23,9 +23,10 @@
       </div>
       <div class="card-footer text-muted">
         <h5>Edit</h5>    
-        <form method="POST" action="/urls/<%= id %>/?_method=PUT">
-          <label for="longURL">New URL:</label>
-          <input
+      <form method="POST" action="/urls/<%= id %>">
+        <input type="hidden" name="_method" value="PUT">
+        <label for="longURL">New URL:</label>
+        <input
           type="text"
           name="longURL"
           placeholder="http://"
