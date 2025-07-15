@@ -166,6 +166,7 @@ app.get("/u/:id", (req, res) => {
 
 app.post("/urls", (req, res) => {
   const userID = req.session.userID;
+
   if (!users[userID]) {
     return res.status(403).render("errorPage", {
       status: 403,
@@ -173,15 +174,19 @@ app.post("/urls", (req, res) => {
       redirectLink: "/login"
     });
   }
+
+  const longURL = req.body.longURL;
   const id = generateRandomString();
+
   urlDatabase[id] = {
-    longURL: req.body.longURL,
+    longURL,
     userID,
     createdDate: new Date().toUTCString(),
     visitCount: 0,
     uniqueVisits: 0,
     visitors: {}
   };
+
   res.redirect(`/urls/${id}`);
 });
 
